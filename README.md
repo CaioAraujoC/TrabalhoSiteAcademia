@@ -1,3 +1,6 @@
+O projeto consiste em uma plataforma web interativa projetada para auxiliar indivíduos na jornada rumo a um estilo de vida mais saudável e personalizado. Através de uma interface intuitiva, o site oferece recursos essenciais para o autoconhecimento corporal, como a identificação do biotipo físico (Ectomorfo, Mesomorfo e Endomorfo) e uma calculadora de Índice de Massa Corporal (IMC). Além disso, a plataforma serve como um portfólio e ponto de contato para um personal trainer, exibindo informações sobre seus serviços, valores e a facilidade de agendamento, visando conectar potenciais clientes a um acompanhamento profissional direcionado."
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
