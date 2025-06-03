@@ -1,115 +1,100 @@
+import BiotipoSection from "@/Components/BiotipoSection";
+import Contact from "@/Components/Contact";
+import IMCCalculator from "@/Components/IMCCalculator";
+import Price from "@/Components/Price";
+import { Roboto } from "next/font/google";
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const roboto = Roboto({
+	weight: ["400", "700"],
+	subsets: ["latin"],
+	variable: "--font-roboto",
 });
 
 export default function Home() {
-  return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	return (
+		<div className={roboto.className}>
+			<div className="bg-[#FAFAFA]">
+				{/* <Header /> */}
+				<section>
+					<div className="flex mx-45 h-[600px] items-center justify-between">
+						<div className="text-6xl flex flex-col">
+							<span className="tracking-wider">Treinamento</span>
+							<span className="tracking-wider">Personalizado de Elite</span>
+							<span className="pb-5 tracking-wider">
+								Em <span className="text-amber-300">J. Pessoa</span>
+							</span>
+							<p className="text-base opacity-50 ">
+								Transforme seu corpo, eleve sua confiança — nós te guiamos em cada
+								passo.
+							</p>
+							<p className="text-base opacity-50 ">
+								Planos personalizados. Resultados reais. Foco nos seus objetivos.
+							</p>
+						</div>
+						<div>
+							<Image
+								src="/b005bc26-9908-4e6a-902b-9f079d22c0f7.jpeg"
+								alt="Imagem de treino personalizado"
+								width={500}
+								height={300}
+							/>
+						</div>
+					</div>
+				</section>
+				<section className="bg-[#F8F8F8] flex items-center mx-45 justify-between py-10">
+					<div className="flex flex-col w-[45%]">
+						<span className="text-4xl tracking-wider">Força em cada repetição.</span>
+						<span className="text-4xl text-amber-300 tracking-wider">
+							Disciplina em cada sessão.
+						</span>
+						<div className="py-10 flex flex-col gap-5">
+							<p className="opacity-50 ">
+								Bem-vindo à Elite Training — seu acompanhamento fitness personalizado
+								em João Pessoa.
+							</p>
+							<p className="opacity-50 ">
+								Unimos experiência e método — entregando treinos ajustados ao seu
+								corpo, objetivos e rotina. Venha com a gente, comprometa-se e
+								desbloqueie sua melhor versão.
+							</p>
+						</div>
+					</div>
+					<div className="flex justify-between w-[40%]">
+						<div className="flex flex-col gap-7">
+							<div>
+								<span className="text-6xl text-amber-300">10+</span>
+								<p className="opacity-50 ">anos de experiência</p>
+							</div>
+							<div>
+								<span className="text-6xl text-amber-300">1.5k+</span>
+								<p className="opacity-50 ">alunos transformados</p>
+							</div>
+						</div>
+						<div className="flex flex-col gap-7">
+							<div>
+								<span className="text-6xl text-amber-300">20+</span>
+								<p className="opacity-50">certificações profissionais</p>
+							</div>
+							<div>
+								<span className="text-6xl text-amber-300">9,9/10</span>
+								<p className="opacity-50 ">avaliação no Google Reviews</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<Price />
+				<BiotipoSection />
+				<IMCCalculator />
+				<section className="flex justify-center py-10">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15836.99337614424!2d-34.85374617946734!3d-7.097187982263564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd0e422da873%3A0x252e780cac7ff41c!2sCentro%20Universit%C3%A1rio%20-%20UNIESP!5e0!3m2!1spt-BR!2sbr!4v1748888259347!5m2!1spt-BR!2sbr"
+						width="80%"
+						height="450"
+					></iframe>
+				</section>
+				<Contact />
+			</div>
+		</div>
+	);
 }
