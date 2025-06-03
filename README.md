@@ -1,43 +1,65 @@
-O projeto consiste em uma plataforma web interativa projetada para auxiliar indivíduos na jornada rumo a um estilo de vida mais saudável e personalizado. Através de uma interface intuitiva, o site oferece recursos essenciais para o autoconhecimento corporal, como a identificação do biotipo físico (Ectomorfo, Mesomorfo e Endomorfo) e uma calculadora de Índice de Massa Corporal (IMC). Além disso, a plataforma serve como um portfólio e ponto de contato para um personal trainer, exibindo informações sobre seus serviços, valores e a facilidade de agendamento, visando conectar potenciais clientes a um acompanhamento profissional direcionado."
+Projeto Fitness - Plataforma de Saúde e Contratação de Personal Trainer
+Este é um projeto Next.js criado com create-next-app.
 
+📝 Descrição do Projeto
+O projeto consiste em uma plataforma web interativa projetada para auxiliar indivíduos na jornada rumo a um estilo de vida mais saudável e personalizado. Através de uma interface intuitiva, o site oferece recursos essenciais para o autoconhecimento corporal, como:
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+Identificação do Biotipo Físico: Ajuda o usuário a identificar se seu biotipo é Ectomorfo, Mesomorfo ou Endomorfo.
+Calculadora de IMC: Permite que o usuário calcule seu Índice de Massa Corporal.
+Além disso, a plataforma serve como um portfólio e ponto de contato para um personal trainer, exibindo informações sobre seus serviços, valores e facilitando o agendamento de aulas, visando conectar potenciais clientes a um acompanhamento profissional direcionado.
 
-## Getting Started
+🎯 Cliente Ideal
+O público-alvo deste projeto são Indivíduos em Busca de Saúde e Fitness. Este grupo engloba pessoas que:
 
-First, run the development server:
+Estão iniciando ou buscando aprimorar sua jornada fitness.
+Possuem dúvidas sobre seu próprio corpo e suas necessidades.
+Têm metas de saúde claras (perda de peso, ganho de massa muscular).
+Procuram orientação profissional qualificada e personalizada.
+O site oferece a eles ferramentas de autoconhecimento (biotipo, IMC) e um caminho claro para encontrar e contratar um profissional que possa desenvolver um plano de treino e nutrição adaptado às suas necessidades específicas.
+
+💡 Problema a ser Resolvido
+A plataforma foi criada para solucionar três desafios comuns no mundo fitness:
+
+Falta de Direcionamento: Muitos iniciantes não sabem por onde começar ou qual tipo de treino é mais adequado para seu corpo. A identificação do biotipo e a calculadora de IMC fornecem um ponto de partida para o autoconhecimento.
+Dificuldade em Encontrar Profissionais Qualificados: Oferece um canal direto e profissional para encontrar, avaliar e contratar os serviços de um personal trainer.
+Informações Dispersas: Centraliza dados cruciais sobre serviços, metodologias e valores, evitando que o potencial cliente precise buscar informações fragmentadas em diferentes locais.
+🚀 Começando
+Primeiro, para rodar o servidor de desenvolvimento, execute um dos seguintes comandos:
 
 ```bash
 npm run dev
-# or
+
+ou
 yarn dev
-# or
+
+ou
 pnpm dev
-# or
+
+ou
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Abra [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) no seu navegador para ver o resultado.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Você pode começar a editar a página modificando o arquivo `pages/index.tsx`. A página será atualizada automaticamente conforme você edita o arquivo.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+As [rotas de API](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) podem ser acessadas em [http://localhost:3000/api/hello](https://www.google.com/search?q=http://localhost:3000/api/hello). Este endpoint pode ser editado em `pages/api/hello.ts`.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O diretório `pages/api` é mapeado para `/api/*`. Os arquivos neste diretório são tratados como [rotas de API](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) em vez de páginas React.
 
-## Learn More
+Este projeto usa [`next/font`](https://www.google.com/search?q=%5Bhttps://nextjs.org/docs/pages/building-your-application/optimizing/fonts%5D\(https://nextjs.org/docs/pages/building-your-application/optimizing/fonts\)) para otimizar e carregar automaticamente a [Geist](https://vercel.com/font), a nova família de fontes da Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+## 📚 Aprenda Mais
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Para aprender mais sobre o Next.js, confira os seguintes recursos:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  - [Documentação do Next.js](https://nextjs.org/docs) - aprenda sobre os recursos e a API do Next.js.
+  - [Learn Next.js](https://nextjs.org/learn-pages-router) - um tutorial interativo do Next.js.
 
-## Deploy on Vercel
+Você pode conferir o [repositório do Next.js no GitHub](https://github.com/vercel/next.js) - feedbacks e contribuições são bem-vindos\!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ☁️ Deploy na Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+A maneira mais fácil de fazer o deploy do seu aplicativo Next.js é usando a [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), dos criadores do Next.js.
+
+Confira nossa [documentação de deploy do Next.js](https://nextjs.org/docs/pages/building-your-application/deploying) para mais detalhes.
